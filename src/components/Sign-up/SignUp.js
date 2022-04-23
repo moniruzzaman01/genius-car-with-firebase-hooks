@@ -8,24 +8,24 @@ const SignUp = () => {
     <div className="w-75 mx-auto mt-5">
       <h1 className="my-4">Register here!!!</h1>
       <form>
-        <div class="mb-3">
-          <label class="form-label">Your Name</label>
-          <input type="text" class="form-control" />
+        <div className="mb-3">
+          <label className="form-label">Your Name</label>
+          <input type="text" className="form-control" />
         </div>
-        <div class="mb-3">
-          <label class="form-label">Email address</label>
+        <div className="mb-3">
+          <label className="form-label">Email address</label>
           <input
             onBlur={(e) => setEmail(e.target.value)}
             type="email"
-            class="form-control"
+            className="form-control"
           />
         </div>
-        <div class="mb-3">
-          <label class="form-label">Password</label>
+        <div className="mb-3">
+          <label className="form-label">Password</label>
           <input
             onBlur={(e) => setPassword(e.target.value)}
             type="password"
-            class="form-control"
+            className="form-control"
           />
         </div>
         <p>
@@ -38,7 +38,7 @@ const SignUp = () => {
             Go back to login page.
           </Link>
         </p>
-        <button type="submit" class="btn btn-dark">
+        <button type="submit" className="btn btn-dark">
           Register
         </button>
       </form>

@@ -9,20 +9,20 @@ const Login = () => {
     <div className="w-75 mx-auto mt-5">
       <h1 className="my-4">Login Here!!!</h1>
       <form>
-        <div class="mb-3">
-          <label class="form-label">Email address</label>
+        <div className="mb-3">
+          <label className="form-label">Email address</label>
           <input
             onBlur={(e) => setEmail(e.target.value)}
             type="email"
-            class="form-control"
+            className="form-control"
           />
         </div>
-        <div class="mb-3">
-          <label class="form-label">Password</label>
+        <div className="mb-3">
+          <label className="form-label">Password</label>
           <input
             onBlur={(e) => setPassword(e.target.value)}
             type="password"
-            class="form-control"
+            className="form-control"
           />
         </div>
         <p>
@@ -36,7 +36,7 @@ const Login = () => {
             Create an account.
           </Link>
         </p>
-        <button type="submit" class="btn btn-dark">
+        <button type="submit" className="btn btn-dark">
           Login
         </button>
       </form>
