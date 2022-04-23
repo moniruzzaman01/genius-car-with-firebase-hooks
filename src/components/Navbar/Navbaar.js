@@ -21,7 +21,7 @@ const Navbaar = () => {
             </Nav.Link>
           </Nav>
           <Nav>
-            <Nav.Link as={Link} to="#deets">
+            <Nav.Link as={Link} to="/login">
               Login/SignIn
             </Nav.Link>
           </Nav>
