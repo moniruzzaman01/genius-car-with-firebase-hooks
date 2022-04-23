@@ -6,8 +6,8 @@ import { useNavigate } from "react-router-dom";
 const Service = ({ service }) => {
   // console.log(service);
   const navigate = useNavigate();
-  const handleDetailsBtn = (id) => {
-    navigate(`/service-details/${id}`);
+  const handleBookingBtn = (id) => {
+    navigate(`/booking/${id}`);
   };
   return (
     <div className="col-12 col-md-4 col-lg-3 g-4 relative">
@@ -22,11 +22,11 @@ const Service = ({ service }) => {
           <Card.Text>{service.description.slice(0, 80)}</Card.Text>
           <Card.Text>{service.price}</Card.Text>
           <Button
-            onClick={() => handleDetailsBtn(service.id)}
+            onClick={() => handleBookingBtn(service.id)}
             className="mx-auto d-block"
             variant="dark"
           >
-            Service Details
+            Booking Now
           </Button>
         </Card.Body>
       </Card>
