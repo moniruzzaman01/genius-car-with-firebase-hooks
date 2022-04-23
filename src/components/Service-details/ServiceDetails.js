@@ -1,7 +1,10 @@
 import React from "react";
 import { Card } from "react-bootstrap";
+import { useParams } from "react-router-dom";
 
 const ServiceDetails = () => {
+  const { id } = useParams();
+  console.log(id);
   return (
     <div>
       <Card>

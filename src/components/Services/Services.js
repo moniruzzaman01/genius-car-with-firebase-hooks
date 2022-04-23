@@ -1,13 +1,14 @@
-import React, { useEffect, useState } from "react";
+import useFetch from "../../hooks/useFetch";
 import Service from "../Service/Service";
 
 const Services = () => {
-  const [services, setServices] = useState([]);
-  useEffect(() => {
-    fetch("services.json")
-      .then((res) => res.json())
-      .then((data) => setServices(data));
-  }, []);
+  //   const [services, setServices] = useState([]);
+  //   useEffect(() => {
+  //     fetch("services.json")
+  //       .then((res) => res.json())
+  //       .then((data) => setServices(data));
+  //   }, []);
+  const { services } = useFetch();
   return (
     <div id="Services">
       <h1
